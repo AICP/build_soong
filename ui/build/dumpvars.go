@@ -115,6 +115,7 @@ var BannerVars = []string{
 	"PRODUCT_SOONG_NAMESPACES",
 	"TARGET_GCC_VERSION",
         "TARGET_KERNEL_CLANG_VERSION",
+	"WITH_SU",
 }
 
 func Banner(make_vars map[string]string) string {
@@ -132,6 +133,7 @@ func Banner(make_vars map[string]string) string {
 	fmt.Fprintf(b, "%s=%s\n", "AICP_VERSION", make_vars["AICP_VERSION"])
 	fmt.Fprintf(b, "%s=%s\n", "BUILD_ID", make_vars["BUILD_ID"])
 	fmt.Fprintf(b, "%s=%s\n", "OUT_DIR", make_vars["OUT_DIR"])
+	fmt.Fprintf(b, "%s=%s\n", "WITH_SU", make_vars["WITH_SU"])  
 	fmt.Fprintln(b, "=============================================================")
 	fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION_CODENAME", make_vars["PLATFORM_VERSION_CODENAME"])
 	fmt.Fprintf(b, "%s=%s\n", "PLATFORM_VERSION", make_vars["PLATFORM_VERSION"])
