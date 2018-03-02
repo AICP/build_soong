@@ -101,7 +101,6 @@ func checkJavaVersion(ctx Context, config Config) {
 		ctx.Println("Please follow the machine setup instructions at:")
 		ctx.Println("    https://source.android.com/source/initializing.html")
 		ctx.Println("***************************************************************")
-		ctx.Fatalln("stop")
 	}
 
 	if runtime.GOOS == "linux" {
@@ -117,7 +116,6 @@ func checkJavaVersion(ctx Context, config Config) {
 			ctx.Println("Please follow the machine setup instructions at:")
 			ctx.Println("    https://source.android.com/source/initializing.html")
 			ctx.Println("*******************************************************")
-			ctx.Fatalln("stop")
 		}
 	} else { // darwin
 		if strings.Contains(java_version, "openjdk") {
@@ -129,7 +127,6 @@ func checkJavaVersion(ctx Context, config Config) {
 			ctx.Println("Please follow the machine setup instructions at:")
 			ctx.Println("    https://source.android.com/source/initializing.html")
 			ctx.Println("*******************************************************")
-			ctx.Fatalln("stop")
 		}
 	}
 
@@ -158,6 +155,5 @@ func checkJavaVersion(ctx Context, config Config) {
 		ctx.Println("Please follow the machine setup instructions at:")
 		ctx.Println("    https://source.android.com/source/initializing.html")
 		ctx.Println("****************************************************************")
-		ctx.Fatalln("stop")
 	}
 }
