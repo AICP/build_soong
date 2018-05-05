@@ -59,6 +59,31 @@ func productClean(ctx Context, config Config, what int) {
 	ctx.Println("Entire target directory removed.")
 }
 
+// Remove everything relevant for a clean ota package
+func deviceClean(ctx Context, config Config, what int) {
+
+	productOutPath := config.ProductOut()
+	productOut := func(path string) string {
+		return filepath.Join(productOutPath, path)
+	}
+
+	removeGlobs(ctx,
+		productOut("*.cpio"),
+		productOut("*.img"),
+		productOut("*.zip"),
+		productOut("*.zip.md5sum"),
+		productOut("android-info.txt"),
+		productOut("Changelog.txt"),
+		productOut("kernel"),
+		productOut("recovery"),
+		productOut("root"),
+		productOut("system"),
+		productOut("system_other"),
+		productOut("vendor"))
+
+	ctx.Println("Device specific stuff removed.")
+}
+
 // installClean deletes all of the installed files -- the intent is to remove
 // files that may no longer be installed, either because the user previously
 // installed them, or they were previously installed by default but no longer
