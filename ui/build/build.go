@@ -355,6 +355,10 @@ func Build(ctx Context, config Config) {
 		dataClean(ctx, config)
 		ctx.Println("Deleted data files.")
 		return
+	} else if inList("deviceclean", config.Arguments()) {
+		deviceClean(ctx, config, what)
+		ctx.Println("Performed minimal product cleaning.")
+		return
 	}
 
 	// Still generate the kati suffix in soong-only builds because soong-only still uses kati for
