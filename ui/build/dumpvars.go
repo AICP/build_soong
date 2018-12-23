@@ -114,6 +114,7 @@ var BannerVars = []string{
 	"PDK_FUSION_PLATFORM_ZIP",
 	"PRODUCT_SOONG_NAMESPACES",
 	"TARGET_GCC_VERSION",
+        "TARGET_KERNEL_CLANG_VERSION",
 }
 
 func Banner(make_vars map[string]string) string {
@@ -138,6 +139,7 @@ func Banner(make_vars map[string]string) string {
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_BUILD_VARIANT", make_vars["TARGET_BUILD_VARIANT"])
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_BUILD_TYPE", make_vars["TARGET_BUILD_TYPE"])
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_GCC_VERSION", make_vars["TARGET_GCC_VERSION"])
+        fmt.Fprintf(b, "%s=%s\n", "TARGET_KERNEL_CLANG_VERSION", make_vars["TARGET_KERNEL_CLANG_VERSION"])
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_ARCH", make_vars["TARGET_ARCH"])
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_ARCH_VARIANT", make_vars["TARGET_ARCH_VARIANT"])
 	fmt.Fprintf(b, "%s=%s\n", "TARGET_CPU_VARIANT", make_vars["TARGET_CPU_VARIANT"])
