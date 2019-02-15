@@ -41,15 +41,22 @@ func removeGlobs(ctx Context, globs ...string) {
 	}
 }
 
+
 // Remove everything under the out directory. Don't remove the out directory
 // itself in case it's a symlink.
 func clean(ctx Context, config Config, what int) {
 	removeGlobs(ctx, filepath.Join(config.OutDir(), "*"))
 	ctx.Println("Entire build directory removed.")
 }
-
 func dataClean(ctx Context, config Config, what int) {
 	removeGlobs(ctx, filepath.Join(config.ProductOut(), "data", "*"))
+}
+
+// Remove everything under the target/product directory. Don't remove the
+// common directory.
+func productClean(ctx Context, config Config, what int) {
+	removeGlobs(ctx, filepath.Join(config.TargetDir(), "*"))
+	ctx.Println("Entire target directory removed.")
 }
 
 // installClean deletes all of the installed files -- the intent is to remove
