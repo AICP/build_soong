@@ -75,8 +75,10 @@ func deviceClean(ctx Context, config Config, what int) {
 		productOut("android-info.txt"),
 		productOut("Changelog.txt"),
 		productOut("kernel"),
+		productOut("ramdisk"),
 		productOut("recovery"),
 		productOut("root"),
+		productOut("symbols"),
 		productOut("system"),
 		productOut("system_other"),
 		productOut("vendor"))
