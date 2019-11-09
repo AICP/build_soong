@@ -160,6 +160,7 @@ var BannerVars = []string{
 	"TARGET_KERNEL_CLANG_VERSION",
 	"TARGET_KERNEL_CLANG_CUSTOM",
 	"CLANG_CUSTOM_VERSION_LATEST",
+	"KERNEL_TOOLCHAIN",
 	"HOST_BUILD_TYPE",
 	"BUILD_ID",
 	"OUT_DIR",
@@ -176,8 +177,12 @@ func Banner(make_vars map[string]string) string {
 
 	fmt.Fprintln(b, "============================================")
 	for _, name := range BannerVars {
-		if make_vars[name] != "" {
+		if (make_vars[name] != "" && name != "KERNEL_TOOLCHAIN") {
 			fmt.Fprintf(b, "%s=%s\n", name, make_vars[name])
+		}
+		if (make_vars[name] != "" && name == "KERNEL_TOOLCHAIN") {
+			parts := strings.Split(make_vars[name], "linux-x86/")
+			fmt.Fprintf(b, "%s=%s\n", name, parts[1])
 		}
 	}
 	fmt.Fprint(b, "============================================")
