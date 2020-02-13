@@ -102,6 +102,7 @@ var Configuration = map[string]PathConfig{
 	"patch":    Allowed,
 	"pstree":   Allowed,
 	"python3":  Allowed,
+	"python3.6":Allowed,
 	"python3.8":Allowed,
 	"realpath": Allowed,
 	"repo":     Allowed,
