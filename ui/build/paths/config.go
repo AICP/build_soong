@@ -114,6 +114,12 @@ var Configuration = map[string]PathConfig{
 	"shuf":           Allowed,
 	"mogrify":        Allowed,
 	"xmllint":        Allowed,
+	"python3":        Allowed,
+	"python3.6":      Allowed,
+	"python3.8":      Allowed,
+	"python3.9":      Allowed,
+	"python3.10":     Allowed,
+	"python3.11":     Allowed,
 
 	// Host toolchain is removed. In-tree toolchain should be used instead.
 	// GCC also can't find cc1 with this implementation.
