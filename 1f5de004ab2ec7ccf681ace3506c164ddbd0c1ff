@@ -33,6 +33,23 @@
       "message": "Depends on change https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/109631\n-1 to prevent any accidental merge\n\nNote: Retain md5sum to clear any possible cruft ?",
       "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "742ecd3e_088482ca",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 6
+      },
+      "writtenOn": "2021-05-05T06:18:16Z",
+      "side": 1,
+      "message": "making sure.",
+      "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
