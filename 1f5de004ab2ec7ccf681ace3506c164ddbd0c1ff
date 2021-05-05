@@ -16,6 +16,23 @@
       "message": "this commit depends a bit, what we will do.",
       "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d27fd39f_50d96aa1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-05-05T03:16:22Z",
+      "side": 1,
+      "message": "Depends on change https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/109631\n-1 to prevent any accidental merge\n\nNote: Retain md5sum to clear any possible cruft ?",
+      "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
