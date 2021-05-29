@@ -67,6 +67,23 @@
       "message": "http://gph.is/XJONo8\n\nRelated to https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/109631",
       "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b385a4e7_ccda68a0",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2021-05-29T07:02:45Z",
+      "side": 1,
+      "message": "grouping linked commits in topic might be a good idea too. ",
+      "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
