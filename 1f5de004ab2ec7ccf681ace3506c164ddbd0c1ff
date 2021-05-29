@@ -50,6 +50,23 @@
       "message": "making sure.",
       "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8441375f_45dc991e",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2021-05-29T05:05:55Z",
+      "side": 1,
+      "message": "http://gph.is/XJONo8\n\nRelated to https://gerrit.aicp-rom.com/c/AICP/vendor_aicp/+/109631",
+      "revId": "1f5de004ab2ec7ccf681ace3506c164ddbd0c1ff",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
