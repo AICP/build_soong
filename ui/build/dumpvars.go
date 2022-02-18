@@ -179,12 +179,8 @@ func Banner(make_vars map[string]string) string {
 
 	fmt.Fprintln(b, "============================================")
 	for _, name := range BannerVars {
-		if (make_vars[name] != "" && name != "KERNEL_TOOLCHAIN") {
+		if make_vars[name] != "" {
 			fmt.Fprintf(b, "%s=%s\n", name, make_vars[name])
-		}
-		if (make_vars[name] != "" && name == "KERNEL_TOOLCHAIN") {
-			parts := strings.Split(make_vars[name], "linux-x86/")
-			fmt.Fprintf(b, "%s=%s\n", name, parts[1])
 		}
 	}
 	fmt.Fprint(b, "============================================")
