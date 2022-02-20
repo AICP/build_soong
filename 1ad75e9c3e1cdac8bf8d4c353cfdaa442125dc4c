@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "cf4f3a49_2d7cd66a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 3
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1646
+      },
+      "writtenOn": "2022-02-20T10:03:50Z",
+      "side": 1,
+      "message": "TC detected correctly now\n\nTARGET_KERNEL_CLANG_COMPILE\u003dtrue\nKERNEL_TOOLCHAIN\u003dgas/linux-x86",
+      "revId": "1ad75e9c3e1cdac8bf8d4c353cfdaa442125dc4c",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
