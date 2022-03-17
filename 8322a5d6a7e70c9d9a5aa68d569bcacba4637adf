@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0bb3970a_b340d489",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-03-17T21:19:13Z",
+      "side": 1,
+      "message": "Fixes the build error: http://haste.aicp-rom.com/icuyugoqud.coffeescript",
+      "revId": "8322a5d6a7e70c9d9a5aa68d569bcacba4637adf",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
