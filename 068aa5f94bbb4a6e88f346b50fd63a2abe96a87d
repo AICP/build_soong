@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "de40c7bf_cc2f92d8",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1682
+      },
+      "writtenOn": "2022-04-26T13:49:35Z",
+      "side": 1,
+      "message": "Hold, till now \"it builds\"",
+      "revId": "068aa5f94bbb4a6e88f346b50fd63a2abe96a87d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
