@@ -16,6 +16,23 @@
       "message": "Hold, till now \"it builds\"",
       "revId": "068aa5f94bbb4a6e88f346b50fd63a2abe96a87d",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "c0f0c8b9_569c3786",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1682
+      },
+      "writtenOn": "2022-04-29T17:37:58Z",
+      "side": 1,
+      "message": "works",
+      "revId": "068aa5f94bbb4a6e88f346b50fd63a2abe96a87d",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
