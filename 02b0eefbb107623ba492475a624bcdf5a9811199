@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "ba7fc46e_bf5db31f",
+        "filename": "scripts/check_boot_jars/package_allowed_list.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 3
+      },
+      "writtenOn": "2022-07-19T16:47:41Z",
+      "side": 1,
+      "message": "these doesn\u0027t help ?",
+      "range": {
+        "startLine": 255,
+        "startChar": 0,
+        "endLine": 256,
+        "endChar": 23
+      },
+      "revId": "02b0eefbb107623ba492475a624bcdf5a9811199",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
