@@ -22,6 +22,30 @@
       },
       "revId": "02b0eefbb107623ba492475a624bcdf5a9811199",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2deb6b0e_1d0a651b",
+        "filename": "scripts/check_boot_jars/package_allowed_list.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 256,
+      "author": {
+        "id": 492
+      },
+      "writtenOn": "2022-07-20T15:18:59Z",
+      "side": 1,
+      "message": "Got it sorted out, bad repo-sync of frameworks/opt/telephony. Abandoning it.",
+      "parentUuid": "ba7fc46e_bf5db31f",
+      "range": {
+        "startLine": 255,
+        "startChar": 0,
+        "endLine": 256,
+        "endChar": 23
+      },
+      "revId": "02b0eefbb107623ba492475a624bcdf5a9811199",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
