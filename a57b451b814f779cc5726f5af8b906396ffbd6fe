@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "ef4df723_170c0594",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-07-21T17:05:09Z",
+      "side": 1,
+      "message": "Removes the entire product out directory now\nOlder implementation was leaving a mere 3.1G from 23G, lets not leave anything",
+      "revId": "a57b451b814f779cc5726f5af8b906396ffbd6fe",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
