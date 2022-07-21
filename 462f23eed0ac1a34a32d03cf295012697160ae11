@@ -16,6 +16,23 @@
       "message": "Can this be deferred for a day or two, realised some patches were still to be brought to s12.1?\n(deviceclean ones)",
       "revId": "462f23eed0ac1a34a32d03cf295012697160ae11",
       "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "0a12a164_859660f1",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 343
+      },
+      "writtenOn": "2022-07-21T06:13:46Z",
+      "side": 1,
+      "message": "I agree with George...",
+      "revId": "462f23eed0ac1a34a32d03cf295012697160ae11",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
     }
   ]
 }
