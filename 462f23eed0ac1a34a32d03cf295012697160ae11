@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "8fb33605_1131c810",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1416
+      },
+      "writtenOn": "2022-07-21T05:48:57Z",
+      "side": 1,
+      "message": "Can this be deferred for a day or two, realised some patches were still to be brought to s12.1?\n(deviceclean ones)",
+      "revId": "462f23eed0ac1a34a32d03cf295012697160ae11",
+      "serverId": "9f904cbb-a964-4fab-a7dc-5cfc4d5c238b"
+    }
+  ]
+}
