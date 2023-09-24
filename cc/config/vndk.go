@@ -59,6 +59,7 @@ var VndkMustUseVendorVariantList = []string{
 	"android.hardware.power-V2-ndk",
 	"android.hardware.power-V2-ndk_platform",
 	"android.hardware.power-V3-ndk",
+	"android.hardware.power-V3-ndk_platform",
 	"android.hardware.power-ndk_platform",
 	"android.hardware.power.stats-V1-ndk",
 	"android.hardware.power.stats-V1-ndk_platform",
