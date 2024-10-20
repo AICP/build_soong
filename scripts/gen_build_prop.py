@@ -126,6 +126,8 @@ def parse_args():
   if config["BuildNumber"].startswith("eng."):
     config["BuildNumber"] = config["DateUtc"]
 
+  config["DEVICE_MAINTAINERS"] = config["DEVICE_MAINTAINERS"]
+
   override_config(config)
 
   append_additional_system_props(args)
@@ -254,6 +256,7 @@ def generate_build_info(args):
   print(f"ro.build.flavor={config['BuildFlavor']}")
 
   print(f"ro.lineage.device={config['LineageDevice']}")
+  print(f"ro.aicp.maintainers={config['DEVICE_MAINTAINERS']}")
 
   # These values are deprecated, use "ro.product.cpu.abilist"
   # instead (see below).
