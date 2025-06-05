@@ -256,6 +256,7 @@ def generate_build_info(args):
   print(f"ro.build.flavor={config['BuildFlavor']}")
 
   print(f"ro.lineage.device={config['LineageDevice']}")
+  print(f"ro.aicp.device={config['LineageDevice']}")
 
   if  config["DEVICE_MAINTAINERS"] != 0:
     print(f"ro.aicp.maintainer={config['DEVICE_MAINTAINERS']}")
