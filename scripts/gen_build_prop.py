@@ -88,13 +88,6 @@ def parse_args():
   args.config = json.load(args.product_config)
   config = args.config
 
-  if args.partition == "system":
-    config['ProductBrand'] = config['SystemBrand']
-    config['DeviceName'] = config['SystemDevice']
-    config['ProductManufacturer'] = config['SystemManufacturer']
-    config['ProductModel'] = config['SystemModel']
-    config['DeviceProduct'] = config['SystemName']
-
   config["BuildFlavor"] = get_build_flavor(config)
   config["BuildKeys"] = get_build_keys(config)
   config["BuildVariant"] = get_build_variant(config)
@@ -136,6 +129,12 @@ def parse_args():
   config["DEVICE_MAINTAINERS"] = 0
 
   override_config(config)
+  if args.partition == "system":
+    config['ProductBrand'] = config['SystemBrand']
+    config['DeviceName'] = config['SystemDevice']
+    config['ProductManufacturer'] = config['SystemManufacturer']
+    config['ProductModel'] = config['SystemModel']
+    config['DeviceProduct'] = config['SystemName']
 
   append_additional_system_props(args)
   append_additional_vendor_props(args)
@@ -334,7 +333,7 @@ def append_additional_system_props(args):
   props.append("ro.actionable_compatible_property.enabled=true")
 
   # Enable core platform API violation warnings on userdebug and eng builds.
-  if config["BuildVariant"] != "user":
+  if not config["ProductNotDebuggableInUserdebug"]:
     props.append("persist.debug.dalvik.vm.core_platform_api_policy=just-warn")
 
   # Define ro.sanitize.<name> properties for all global sanitizers.
@@ -379,6 +378,7 @@ def append_additional_system_props(args):
       # is set.
       if config["ProductNotDebuggableInUserdebug"]:
         enable_target_debugging = False
+        enable_dalvik_lock_contention_logging = False
 
     # Disallow mock locations by default for user builds
     # AICP: still allow for userdebug
